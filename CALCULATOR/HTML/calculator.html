@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/calculator.css" />
+    <script src="../JS/calculator.js" defer></script>
+  </head>
+  <body>
+    <h2>Calculator</h2>
+    <form>
+      <input type="text" name="display" readonly /><br /><br />
+      <input type="button" value="7" onclick="buttonClick(this.value)" />
+      <input type="button" value="8" onclick="buttonClick(this.value)" />
+      <input type="button" value="9" onclick="buttonClick(this.value)" />
+      <input type="button" value="/" onclick="buttonClick(this.value)" /><br />
+      <input type="button" value="4" onclick="buttonClick(this.value)" />
+      <input type="button" value="5" onclick="buttonClick(this.value)" />
+      <input type="button" value="6" onclick="buttonClick(this.value)" />
+      <input type="button" value="*" onclick="buttonClick(this.value)" /><br />
+      <input type="button" value="1" onclick="buttonClick(this.value)" />
+      <input type="button" value="2" onclick="buttonClick(this.value)" />
+      <input type="button" value="3" onclick="buttonClick(this.value)" />
+      <input type="button" value="-" onclick="buttonClick(this.value)" /><br />
+      <input type="button" value="0" onclick="buttonClick(this.value)" />
+      <input type="button" value="." onclick="buttonClick(this.value)" />
+      <input type="button" value="=" onclick="buttonClick(this.value)" />
+      <input type="button" value="+" onclick="buttonClick(this.value)" /><br />
+      <input type="reset" value="C" onclick="clearCalc()" />
+    </form>
+  </body>
+</html>
