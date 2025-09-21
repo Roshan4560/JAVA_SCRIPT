@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rock Paper Scissor Game</title>
+  <link rel="stylesheet" type="text/css" href="../CSS/sps.css">
+  <script src="../JS/sps.js" defer></script>
+</head>
+<body>
+  <h2>Rock Paper Scissor</h2>
+  <div class="game-container">
+    <div class="choices">
+      <button onclick="play('rock')">
+        <img src="https://th.bing.com/th/id/OIP.At55B00vxjh56AMvY4t2ZQAAAA?w=231&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" style="width: 372px; height: 298px;" alt="ROCK">
+        <br>
+        🪨 ROCK</button>
+
+      <button onclick="play('paper')">
+        <img src="https://th.bing.com/th/id/OIP.-ma0umHQ-Uo1-wcn9kPPZwHaG6?w=201&h=187&c=7&r=0&o=5&dpr=1.5&pid=1.7" style="width: 372px; height: 298px;" alt="PAPER">
+        <br>
+        📄 PAPER</button>
+
+      <button onclick="play('scissor')">
+        <img src="https://th.bing.com/th/id/OIP.FBgTsXOFehZ_imMmjo97RQHaFS?w=244&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" style="width: 372px; height: 298px;" alt="SCISSOR">
+        <br>
+        ✂️ SCISSOR</button>
+
+    </div>
+    <div class="result">
+      <p id="user-choice">Your Choice: -</p>
+      <p id="computer-choice">Computer's Choice: -</p>
+      <p id="game-result">Result: -</p>
+    </div>
+    <div class="score">
+      <p>User: <span id="user-score">0</span></p>
+      <p>Computer: <span id="computer-score">0</span></p>
+    </div>
+    <button onclick="resetGame()" class="reset-btn">Reset</button>
+  </div>
+</body>
+</html>
