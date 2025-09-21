@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Tic Tac Toe</title>
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1><span>Tic Tac Toe</span></h1>
+        
+        <div class="mode-selection">
+            <button id="player-mode" class="mode-btn active">
+                <i class="fas fa-users"></i> Player vs Player
+            </button>
+            <button id="computer-mode" class="mode-btn">
+                <i class="fas fa-robot"></i> Player vs Computer
+            </button>
+        </div>
+        
+        <div class="game-info">
+            <div class="player-turn">
+                <span id="current-player">Player X's turn</span>
+            </div>
+            <div class="scoreboard">
+                <div class="score" id="player-x">X: 0</div>
+                <div class="score" id="player-o">O: 0</div>
+                <div class="score" id="ties">Ties: 0</div>
+            </div>
+        </div>
+        
+        <div class="game-board">
+        </div>
+        
+        <button id="reset-btn" class="reset-btn">
+            <i class="fas fa-sync-alt"></i> Reset Game
+        </button>
+    </div>
+
+    <div class="modal" id="result-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="result-text"></h2>
+            <button id="play-again">Play Again</button>
+        </div>
+    </div>
+
+    <script src="../JS/main.js"></script>
+</body>
+</html>
